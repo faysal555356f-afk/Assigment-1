@@ -1,126 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Vault</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Job Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 🔹 Navbar Section -->
-    <header class="navbar">
-        <div class="logo">
-            <!-- Replace with actual logo image or text -->
-            <h2>KnowledgeVault</h2>
-        </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Notes</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="nav-btn">
-            <button class="btn btn-primary">Get Started</button>
-        </div>
-    </header>
+<div class="container">
 
-    <main>
-        <!-- 🔹 Banner Section -->
-        <section class="banner">
-            <div class="banner-content">
-                <h1>Your Digital Knowledge Vault</h1>
-                <p>Organize your thoughts, tasks, and notes efficiently in one simple and reliable system.</p>
-                <div class="banner-buttons">
-                    <button class="btn btn-primary">Explore Now</button>
-                    <button class="btn btn-secondary">Learn More</button>
-                </div>
-            </div>
-        </section>
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <h1>Job Dashboard</h1>
+    <div class="stats">
+      <div>Total: <span id="totalCount">0</span></div>
+      <div>Interview: <span id="interviewCount">0</span></div>
+      <div>Rejected: <span id="rejectedCount">0</span></div>
+    </div>
+  </div>
 
-        <!-- 🔹 Notes Section -->
-        <section class="notes-section">
-            <div class="section-header">
-                <h2>Quick Notes</h2>
-                <p>Keep track of everything that matters to you instantly</p>
-            </div>
-            <div class="notes-grid">
-                <!-- Card 1 -->
-                <div class="note-card">
-                    <div class="icon-wrapper"><span class="icon">📝</span></div>
-                    <h3>Research Paper</h3>
-                    <p>Key findings and citations for the upcoming thesis project.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="note-card">
-                    <div class="icon-wrapper"><span class="icon">💡</span></div>
-                    <h3>Project Ideas</h3>
-                    <p>A collection of creative solutions for web layout workflows.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="note-card">
-                    <div class="icon-wrapper"><span class="icon">📅</span></div>
-                    <h3>Daily Schedule</h3>
-                    <p>Hourly breakdown of tasks, lectures, and revision slots.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="note-card">
-                    <div class="icon-wrapper"><span class="icon">🎯</span></div>
-                    <h3>Personal Goals</h3>
-                    <p>Short-term objectives mapped out for the next quarter.</p>
-                </div>
-            </div>
-        </section>
+  <!-- Section -->
+  <div class="section-header">
+    <h2>Available Jobs</h2>
+    <span id="tabCount">0</span>
+  </div>
 
-        <!-- 🔹 Second Brain Section -->
-        <section class="second-brain">
-            <div class="sb-image">
-                <img src="https://via.placeholder.com/500x400" alt="Second Brain Illustration">
-            </div>
-            <div class="sb-content">
-                <span class="section-msg">Build Your Second Brain</span>
-                <h2>Never Lose a Thought Again</h2>
-                <p class="description">Streamline your workflows by offloading your memory into a secure, searchable knowledge repository.</p>
-                <ul class="sb-list">
-                    <li>✨ Seamless data categorization</li>
-                    <li>⚡ Lightning fast structural organization</li>
-                    <li>🔒 Complete privacy and custom controls</li>
-                </ul>
-            </div>
-        </section>
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="all">All</button>
+    <button class="tab" data-tab="interview">Interview</button>
+    <button class="tab" data-tab="rejected">Rejected</button>
+  </div>
 
-        <!-- 🚀 CHALLENGE: Early Access Section -->
-        <section class="early-access">
-            <div class="early-access-content">
-                <h2>Join the Beta Version</h2>
-                <p class="subtitle">Be the first to experience the absolute power of an organized mind.</p>
-                <p class="simple-message">Limited spots available for this month's intake group.</p>
-                <button class="btn btn-primary btn-icon">
-                    Get Early Access <span class="btn-icon-space">🚀</span>
-                </button>
-                <p class="ending-message">No credit card required to sign up.</p>
-                <p class="ending-message">Instant setup within 2 minutes flat.</p>
-            </div>
-        </section>
-    </main>
+  <!-- Cards -->
+  <div id="jobContainer" class="jobs"></div>
 
-    <!-- 🔹 Footer Section -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-logo">
-                <h2>KnowledgeVault</h2>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-icon">🌐</a>
-                <a href="#" class="social-icon">📘</a>
-                <a href="#" class="social-icon">🐦</a>
-            </div>
-        </div>
-        <hr class="footer-divider">
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2026 KnowledgeVault Inc. All rights reserved.</p>
-        </div>
-    </footer>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
